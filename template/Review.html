@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reseña de Trabajo</title>
+</head>
+<p class="title">
+<h1>----------------------------------------Reseñas de Practicas Profesionales----------------------------------------</h1>
+<hr>
+{% if name %}
+  <h2>Bienvenido {{ name }}</h2>
+{% else %}
+  <h2>Bienvenido Usuario</h2>
+{% endif %}
+<body>
+<p>Este sitio web le permite a usted escribir una reseña acerca de su Practica Profesional mas reciente.
+    Esto le ayudara a muchas universidades determinar su capacidad laboral e igual funciona como buscador
+    para que otras compañias lo puedan ubicar para futuras practicas profesionales.
+
+    Empieze su reseña en el nombre de la compañia en donde trabajó:</p>
+
+<p>
+Nombre De Compañia:<br>
+<input type="text" value="">
+</p>
+
+<p>
+<p>Ahora ingrese su puntuación de acuerdo a su experiencia en el trabajo:</p>
+<div class="stars">
+  <form action="">
+    <input class="star star-1" id="star-1" type="radio" name="star"/>
+    <label class="star star-1" for="star-1">1</label>
+        <input class="star star-2" id="star-2" type="radio" name="star"/>
+    <label class="star star-2" for="star-2">2</label>
+        <input class="star star-3" id="star-3" type="radio" name="star"/>
+    <label class="star star-3" for="star-3">3</label>
+        <input class="star star-4" id="star-4" type="radio" name="star"/>
+    <label class="star star-4" for="star-4">4</label>
+        <input class="star star-5" id="star-5" type="radio" name="star"/>
+    <label class="star star-5" for="star-5">5</label>
+  </form>
+</div>
+
+<p>
+Detalles:<br>
+
+<textarea rows="7" cols="50">
+</textarea>
+<br>
+
+<form action="http://127.0.0.1:5000/end">
+    <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
